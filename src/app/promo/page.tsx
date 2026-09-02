@@ -1,6 +1,6 @@
-import CategoryGrid from "@/components/CategoryGrid";
+import TypedDealBrowser from "@/components/TypedDealBrowser";
 
-export default function Home() {
+export default function PromoPage() {
   return (
     <div className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100">
       <header className="border-b border-black/10 dark:border-white/10">
@@ -16,16 +16,11 @@ export default function Home() {
       </header>
 
       <main className="mx-auto max-w-6xl px-4 py-8">
-        <div className="mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Temukan promo terbaik hari ini
-          </h1>
-          <p className="mt-2 text-neutral-500 max-w-2xl">
-            Cari informasi promo brand yang sedang berlangsung, kode voucher diskon,
-            dan kode referral dari berbagai layanan favoritmu.
-          </p>
-        </div>
-        <CategoryGrid />
+        <TypedDealBrowser
+          type="promo"
+          title="Semua Promo"
+          subtitle="Temukan promo menarik dari brand favoritmu setiap hari."
+        />
       </main>
 
       <footer className="mt-12 border-t border-black/10 dark:border-white/10">
